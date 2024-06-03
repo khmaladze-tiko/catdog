@@ -10,7 +10,7 @@ const Header = () => {
         <AppBar
             position="fixed"
             style={{
-                backgroundColor:'#FFA400',
+                backgroundColor:'#FFB7CE',
                 boxShadow:'none',
                 padding:'10px 0',
                 borderBottom:'2px solid #00285e'
@@ -26,23 +26,61 @@ const Header = () => {
                             height="70px"
                         />
                     </div>
+                    
                 </div>
-
-                <div style={{ flexGrow: 1 }}>
+                <div style={{ flexGrow: 10 }} >
+                    <Link>
+                        <Button color="inherit" size="large">All About Pets</Button>
+                    </Link>
+                </div>
+                {/* <div style={{ flexGrow: 1 }}>
                 <Link to="/dogs">
                     <Button color="info" size="large">Dogs</Button>
                 </Link>
                 <Link to="/cats">
                     <Button color="info" size="large">Cats</Button>
                 </Link>
-                </div>
+                </div> */}
 
-               
-                <Link to="/sign_in">
-                    <Button color="info" size="large">Sign In</Button>
+                <Link to="/sign_up">
+                    <Button color="info" size="large">Sign Up</Button>
+                </Link>
+                <Link to="/log_in">
+                    <Button color="info" size="large">Log In</Button>
                 </Link>
             </Toolbar>
-            header
+            <AppBar
+                position="fixed"
+                style={{
+                    backgroundColor:'#FFFFFF',
+                    boxShadow:'none',
+                    margin: '100px 0',
+                    borderBottom:'2px solid #00285e'
+                }}    
+            >
+                <Toolbar style={{ display:'flex' }}>
+                    <div style={{ flexGrow: 1 }}>
+                        <Link>
+                            <Button color="info" size="large">ADOPT OR GET INVOLVED</Button>
+                        </Link>
+                    </div>
+                    <div style={{ flexGrow: 1 }}>
+                        <Link>
+                            <Button color="info" size="large">DOGS & PUPPIES</Button>
+                        </Link>
+                    </div>
+                    <div style={{ flexGrow: 1 }}>
+                        <Link>
+                            <Button color="info" size="large">CATS & KITTENS</Button>
+                        </Link>
+                    </div>
+                    <div style={{ flexGrow: 1 }}>
+                        <Link>
+                            <Button color="info" size="large">OTHER TYPES OF PETS</Button>
+                        </Link>
+                    </div>
+                </Toolbar>
+            </AppBar>
         </AppBar>
     )
 }
